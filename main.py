@@ -5,12 +5,10 @@ from juliacall import Main as jl
 import quick
 
 start_time = time()
-# result = quick.quicksort_test()
-result = quick.quicksort(random.sample(range(1001), 1000))
+result = quick.quicksort_test()
+# result = quick.quicksort(random.sample(range(1001), 1000))
 print("Execution time: ", time() - start_time)
-print(result)  # Output: [1, 2, 3, 4, 7]
-exit()
-
+# print(result)  # Output: [1, 2, 3, 4, 7]
 
 jl.include("quick.jl")
 
