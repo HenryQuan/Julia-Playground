@@ -33,3 +33,9 @@ function quicksort_test()
     end
     return result
 end
+
+if abspath(PROGRAM_FILE) == @__FILE__
+    start_time = time()
+    @time quicksort_test()
+    println("Execution time: ", time() - start_time)
+end

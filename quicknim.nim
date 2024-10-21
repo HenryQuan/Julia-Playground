@@ -31,9 +31,10 @@ proc quicksort_test(): seq[int] {.exportpy.} =
 
 
 # # Example usage
-# let time = epochTime()
-# let sorted_result = quicksort_test()
-# echo "Elapsed time: ", epochTime() - time
-# # echo sorted_result
+let time = epochTime()
+let sorted_result = quicksort_test()
+echo "Elapsed time: ", epochTime() - time
+# echo sorted_result
 
-# nim c --app:lib --out:quicknim.pyd --threads:on --tlsEmulation:off --passL:-static quicknim
+# nim c -d:release --app:lib --out:quicknim.pyd --threads:on --tlsEmulation:off --passL:-static quicknim
+# nim c -d:release .\quicknim.nim
