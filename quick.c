@@ -24,7 +24,7 @@ int main(int argc, char* argv[]) {
     clock_t begin = clock();
     int result = test_performance_app(argc, argv);
     clock_t end = clock();
-    printf("Time taken: %f\n", (double)(end - begin) / CLOCKS_PER_SEC);
+    printf("C: Time taken: %f\n", (double)(end - begin) / CLOCKS_PER_SEC);
     return result;
 }
 

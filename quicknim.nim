@@ -36,4 +36,4 @@ proc quicksort_test(): seq[int] {.exportpy.} =
 # echo "Elapsed time: ", epochTime() - time
 # # echo sorted_result
 
-# nim c --app:lib --out:quick.pyd --threads:on --tlsEmulation:off --passL:-static quick
+# nim c --app:lib --out:quicknim.pyd --threads:on --tlsEmulation:off --passL:-static quicknim
